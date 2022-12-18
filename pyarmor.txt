@@ -1,0 +1,1 @@
+pyarmor obfuscate --restrict=0 .\app.py
