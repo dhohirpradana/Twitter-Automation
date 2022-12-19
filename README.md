@@ -1,16 +1,27 @@
 # Twitter Automatically Change Name and Banner
 
-Automate change of name and Twitter profile banner using python and github action
+Automate change of name and Twitter profile banner using Python code and Github action.
 
 # Steps
-*To get Twitter Keys*
-Go to Twitter developer site https://developer.twitter.com and register twitter developer -> Create new project -> Create app -> Keys and token
+1. *To get Twitter Keys*
+Go to Twitter developer site [Twitter Developer](https://developer.twitter.com "Twitter Developer") and register twitter developer -> Create new project -> Create app -> Keys and token
 
-*Set Github Secrets*
-Go to your repository -> Settings -> Secrets -> Action -> Set TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN, TWITTER_API_KEY, TWITTER_API_SECRET with your Twitter keys
+|key name|description|
+|--------|--------------|
+|TWITTER\_API\_KEY|The Consumer Key for your Twitter App (this is the same for every user)|
+|TWITTER\_API\_SECRET|The Consumer Secret for your Twitter App (this is the same for every user)|
+|TWITTER\_ACCESS\_TOKEN|The Public part of an Access Token for your Twitter App (this is different for every user)|
+|TWITTER\_ACCESS\_TOKEN\_SECRET|The Secret part of an Access Token for your Twitter App (this is different for every user)|
 
-*Create Workflow*
-Go to your repository -> Actions -> New workflow -> Setuo a workflow yourself -> *whatever.yaml*
+2. *Set Github Secrets*
+Go to your repository -> Settings -> Secrets -> Action -> Set TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET, TWITTER_API_KEY, TWITTER_API_SECRET with your Twitter keys
+
+*Clone this repository and push to your Github*
+https://github.com/dhohirpradana/Twitter-Automatically-Name-Banner.git
+
+3. (*if .github/workflows/main.yml not exists)* *Create Workflow*
+Go to your repository -> Actions -> New workflow -> Setup a workflow yourself -> whatever.yaml
+
 ```javascript
 name: twitter auto update banner and name
 
@@ -44,7 +55,9 @@ jobs:
           TWITTER_ACCESS_TOKEN_SECRET: '${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}'
         run: python app.py
 ```
-and SAVE
 
+4. Save
+
+# *Good Luck*
 
 [![twitter auto update banner](https://github.com/dhohirpradana/twitter-banner/actions/workflows/main.yml/badge.svg)](https://github.com/dhohirpradana/twitter-banner/actions/workflows/main.yml)
