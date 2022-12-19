@@ -16,7 +16,7 @@ Go to Twitter developer site [Twitter Developer](https://developer.twitter.com "
 2. *Set Github Secrets*
 Go to your repository -> Settings -> Secrets -> Action -> Set TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET, TWITTER_API_KEY, TWITTER_API_SECRET with your Twitter keys
 
-*Clone this repository and push to your Github*
+*Use this template or Clone this repository and push to your Github*
 https://github.com/dhohirpradana/Twitter-Automatically-Name-Banner.git
 
 3. (*if .github/workflows/main.yml not exists)* *Create Workflow*
