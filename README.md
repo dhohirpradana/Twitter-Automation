@@ -1,4 +1,4 @@
-# Twitter Automatically Change Name and Banner
+# Twitter Automation Change Name and Banner
 
 Automate change of name and Twitter profile banner using Python code and Github action.
 
