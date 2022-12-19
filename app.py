@@ -1,7 +1,6 @@
 import datetime
 
 import tweepy
-from PIL import Image, ImageDraw, ImageFont
 
 # twitter keys
 api_key = "9ZviuCV1HzNYpF3gWRr1bqWLp"
