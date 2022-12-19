@@ -1,12 +1,12 @@
-from datetime import datetime, timedelta, timezone
+import os
+from datetime import datetime, timedelta
 
 import tweepy
 
-# twitter keys
-api_key = "9ZviuCV1HzNYpF3gWRr1bqWLp"
-api_secret = "pG9f2zyJz4nedQsoWk6xktUHm6fDHyzgr5mktgUHXnXv1V0Ex3"
-access_token = "2161741-TXf87OP1LkHJfpA19m6ULUM645UYfU19eJ5iZMeRFE"
-access_token_secret = "CsEHU0bmWJHhtyeZ0cljsUQK6zwKAu5g2WZxt9K68JCBl"
+api_key = os.environ.get("TWITTER_API_KEY")
+api_secret = os.environ.get("TWITTER_API_SECRET")
+access_token = os.environ.get("TWITTER_ACCESS_TOKEN")
+access_token_secret = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
 
 # authentication
 auth = tweepy.OAuthHandler(api_key, api_secret)
