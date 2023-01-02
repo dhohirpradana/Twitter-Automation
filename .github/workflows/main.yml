@@ -3,9 +3,9 @@ name: twitter auto update banner and name
 on:
   push:
     branches:
-      - master
-  schedule:
-    - cron: '0 17 * * *'
+      - master1
+  #schedule:
+    #- cron: '0 17 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
