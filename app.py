@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 
 import tweepy
 import random
+import pytz
+import time
 
 api_key = os.environ.get("TWITTER_API_KEY")
 api_secret = os.environ.get("TWITTER_API_SECRET")
@@ -30,7 +32,7 @@ indonesian_months = (
 )
 
 
-def updateName():
+def update_name():
     d = datetime.now()
     d_gmt_plus_7 = d + timedelta(hours=7)
 
@@ -48,12 +50,11 @@ def updateName():
     api.update_profile(name=name)
 
 
-def updateStatus():
-    text = ""
+def update_status(text):
     api.update_status(status=text)
 
 
-def getTweetAndRetweet():
+def get_tweet_and_retweet():
     # Search for tweets (you can customize the query)
     search_query = "Teknologi"
     tweet_count = 10  # Number of tweets to retrieve
@@ -74,7 +75,7 @@ def getTweetAndRetweet():
                 print(f"Error: {e}")
 
 
-def updateBanner():
+def update_banner():
     days = ("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu")
     now = datetime.now()
 
@@ -84,9 +85,36 @@ def updateBanner():
     day = days[now_indonesia.weekday()]
     print("hari: ", day)
     api.update_profile_banner(day + ".jpg")
+    
+def new_year():
+    # Define the time zone for GMT+7 (Indonesia)
+    indonesia_timezone = pytz.timezone('Asia/Jakarta')
+
+    # Get the current time in Indonesia's time zone
+    current_date = datetime.now(indonesia_timezone)
+
+    # Define the target date for New Year (January 1 of the next year)
+    new_year_date = datetime(current_date.year + 1, 1, 1).replace(tzinfo=pytz.utc).astimezone(indonesia_timezone)
+
+    # Calculate the difference between the two dates
+    remaining_days = (new_year_date - current_date).days
+    
+    # Calculate the year for the next year
+    next_year = current_date.year + 1
+    
+    text = f"{remaining_days} hari lagi menuju {next_year}"
+    update_status(text)
 
 
 if __name__ == "__main__":
-    getTweetAndRetweet()
-    # updateName()
+    # Calculate a random delay between 3 and 7 seconds
+    delay_seconds = random.randint(3, 7)
+    
+    # getTweetAndRetweet()
     # updateBanner()
+    update_name()
+    
+    # Delay for the random duration
+    time.sleep(delay_seconds)
+    
+    new_year()
