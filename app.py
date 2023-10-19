@@ -107,10 +107,11 @@ if __name__ == "__main__":
     delay_seconds = random.randint(3, 7)
     
     # getTweetAndRetweet()
-    # updateBanner()
     update_name()
     
     # Delay for the random duration
     time.sleep(delay_seconds)
     
-    new_year()
+    update_banner()
+    
+    # new_year()
