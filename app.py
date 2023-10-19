@@ -1,9 +1,8 @@
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import tweepy
 import random
-import pytz
 import time
 
 api_key = os.environ.get("TWITTER_API_KEY")
@@ -87,14 +86,11 @@ def update_banner():
     api.update_profile_banner(day + ".jpg")
     
 def new_year():
-    # Define the time zone for GMT+7 (Indonesia)
-    indonesia_timezone = pytz.timezone('Asia/Jakarta')
-
-    # Get the current time in Indonesia's time zone
-    current_date = datetime.now(indonesia_timezone)
+    # Define the current date
+    current_date = datetime.now()
 
     # Define the target date for New Year (January 1 of the next year)
-    new_year_date = datetime(current_date.year + 1, 1, 1).replace(tzinfo=pytz.utc).astimezone(indonesia_timezone)
+    new_year_date = datetime(current_date.year + 1, 1, 1)
 
     # Calculate the difference between the two dates
     remaining_days = (new_year_date - current_date).days
