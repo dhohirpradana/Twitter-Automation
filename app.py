@@ -47,17 +47,19 @@ def updateName():
     name = calendar_emoticon + " " + d_indonesia
     api.update_profile(name=name)
 
+
 def updateStatus():
     text = ""
     api.update_status(status=text)
-    
+
+
 def getTweetAndRetweet():
     # Search for tweets (you can customize the query)
     search_query = "Teknologi"
     tweet_count = 10  # Number of tweets to retrieve
 
-    tweets = api.search(q=search_query, count=tweet_count)
-    
+    tweets = api.search_tweets(q=search_query, kwargs={"count": tweet_count})
+
     # Generate a random number between 0 and 9 (inclusive)
     random_number = random.randint(0, 9)
 
@@ -87,4 +89,4 @@ def updateBanner():
 if __name__ == "__main__":
     getTweetAndRetweet()
     # updateName()
-    #updateBanner()
+    # updateBanner()
