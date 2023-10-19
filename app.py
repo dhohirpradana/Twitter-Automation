@@ -104,14 +104,14 @@ def new_year():
 
 if __name__ == "__main__":
     # Calculate a random delay between 3 and 7 seconds
-    delay_seconds = random.randint(3, 7)
+    # delay_seconds = random.randint(3, 7)
     
     # getTweetAndRetweet()
     update_name()
     
     # Delay for the random duration
-    time.sleep(delay_seconds)
+    # time.sleep(delay_seconds)
     
-    update_banner()
+    # update_banner()
     
     # new_year()
