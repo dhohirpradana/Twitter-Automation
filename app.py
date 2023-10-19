@@ -48,7 +48,7 @@ def updateName():
 
 
 def updateBanner():
-    days = ("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu")
+    #days = ("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu")
     now = datetime.now()
 
     now_indonesia = now + timedelta(hours=7)
@@ -61,4 +61,4 @@ def updateBanner():
 
 if __name__ == "__main__":
     updateName()
-    updateBanner()
+    #updateBanner()
