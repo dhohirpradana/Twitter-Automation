@@ -2,6 +2,7 @@ import os
 from datetime import datetime, timedelta
 
 import tweepy
+import random
 
 api_key = os.environ.get("TWITTER_API_KEY")
 api_secret = os.environ.get("TWITTER_API_SECRET")
@@ -46,9 +47,33 @@ def updateName():
     name = calendar_emoticon + " " + d_indonesia
     api.update_profile(name=name)
 
+def updateStatus():
+    text = ""
+    api.update_status(status=text)
+    
+def getTweetAndRetweet():
+    # Search for tweets (you can customize the query)
+    search_query = "Teknologi"
+    tweet_count = 10  # Number of tweets to retrieve
+
+    tweets = api.search(q=search_query, count=tweet_count)
+    
+    # Generate a random number between 0 and 9 (inclusive)
+    random_number = random.randint(0, 9)
+
+    # Iterate through the tweets and retweet them
+    for i, tweet in enumerate(tweets):
+        if i == random_number:
+            try:
+                tweet_id = tweet.id
+                api.retweet(tweet_id)
+                print(f"Retweeted: {tweet.text}")
+            except tweepy.TweepError as e:
+                print(f"Error: {e}")
+
 
 def updateBanner():
-    #days = ("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu")
+    days = ("senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu")
     now = datetime.now()
 
     now_indonesia = now + timedelta(hours=7)
@@ -60,5 +85,6 @@ def updateBanner():
 
 
 if __name__ == "__main__":
-    updateName()
+    getTweetAndRetweet()
+    # updateName()
     #updateBanner()
