@@ -1,7 +1,7 @@
 import random
 import time
 
-from function import update_name, update_banner, new_year
+from function import update_name, update_banner
 
 
 def delay():
@@ -17,6 +17,3 @@ if __name__ == "__main__":
 
     delay()
     update_banner()
-
-    delay()
-    new_year()
