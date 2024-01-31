@@ -46,18 +46,18 @@ In the context of Twitter Developer, "Key" and "Token" usually refer to API keys
 
 - **API Key (Consumer Key):**
 
-  - The API key, also known as the Consumer Key, is a unique identifier assigned to your application when you create a Twitter Developer account and register a new app. It is used to authenticate your application when making requests to the Twitter API.
+  The API key, also known as the Consumer Key, is a unique identifier assigned to your application when you create a Twitter Developer account and register a new app. It is used to authenticate your application when making requests to the Twitter API.
 
 - **API Secret Key (Consumer Secret):**
 
-  - The API secret key, or Consumer Secret, is a secret code that must be kept confidential. It is used along with the API key to authenticate your application.
+  The API secret key, or Consumer Secret, is a secret code that must be kept confidential. It is used along with the API key to authenticate your application.
 
 - **Access Token:**
 
-  - Access tokens are generated after you've authenticated your application using the API key and secret key. These tokens represent the authorization granted to your application to access specific Twitter accounts or perform certain actions on behalf of a user.
+  Access tokens are generated after you've authenticated your application using the API key and secret key. These tokens represent the authorization granted to your application to access specific Twitter accounts or perform certain actions on behalf of a user.
 
 - **Access Token Secret:**
-  - The access token secret is used in conjunction with the access token to further authenticate requests made by your application.
+  The access token secret is used in conjunction with the access token to further authenticate requests made by your application.
 
 ### How to Get?
 
