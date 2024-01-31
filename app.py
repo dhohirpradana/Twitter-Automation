@@ -15,5 +15,5 @@ def delay():
 if __name__ == "__main__":
     update_name()
 
-    delay()
-    update_banner()
+    # delay()
+    # update_banner()
