@@ -1,3 +1,5 @@
+<img src="screenshot/twitter_profile.png" alt="Twitter Profile" width=900 />
+
 ## Overview
 
 <table>
@@ -34,7 +36,7 @@
     </tr>
 </table>
 
-## APPROACH 1. Obtain Twitter API keys and tokens
+## APPROACH 1. Obtain Twitter API Keys and Tokens
 
 ### Twitter Developer
 
@@ -77,6 +79,8 @@ To obtain API keys and tokens for Twitter Developer:
 3. **Generate Access Token and Access Token Secret:**
    - Scroll down to the "Access token & access token secret" section.
    - Click on the "Create" button to generate your access token and access token secret.
+
+<img src="screenshot/twitter_developer_portal.png" alt="Twitter Developer Portal" width=900 />
 
 ## APPROACH 2. Python Programming Language
 
@@ -272,3 +276,5 @@ As you can conclude from the table above, **Rotating Private/Dedicated Proxies**
 </table>
 
 I created twitter automation using [NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana), and so far it works well and stable.
+
+<img src="screenshot/nodemaven_proxy.png" alt="Nodemaven" width=900 />

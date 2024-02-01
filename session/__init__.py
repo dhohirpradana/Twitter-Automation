@@ -26,6 +26,7 @@ if not NODEMAVEN_PROXY:
 
 
 def create_session():
+    print("Creating session...")
     try:
         # authentication
         auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET)
