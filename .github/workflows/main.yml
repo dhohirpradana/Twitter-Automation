@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: "0 17 * * *"
 jobs:
-  build:
+  execute:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
