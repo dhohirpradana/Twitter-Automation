@@ -286,3 +286,5 @@ I successfully implemented Twitter automation using [NodeMaven](https://nodemave
 <img src="screenshot/github_actions.png" alt="Github Actions" width=900 />
 
 Overall, the integration of proxies in my Twitter automation using [NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana) has not only resolved previous security session issues but also contributed to the overall stability and reliability of the system. I am pleased with the successful outcome and look forward to further refining and enhancing the user experience.
+
+[![twitter auto update banner and name](https://github.com/dhohirpradana/Twitter-Automation/actions/workflows/main.yml/badge.svg)](https://github.com/dhohirpradana/Twitter-Automation/actions/workflows/main.yml)
