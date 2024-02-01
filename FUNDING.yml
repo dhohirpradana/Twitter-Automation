@@ -1,2 +1,6 @@
 github: [dhohirpradana, nodemaven]
-custom: ["https://github.com/dhohirpradana", "https://nodemaven.com"]
+custom:
+  [
+    "https://github.com/dhohirpradana",
+    "https://nodemaven.com/?a_aid=dhohirpradana",
+  ]
