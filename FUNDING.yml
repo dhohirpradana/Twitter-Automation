@@ -1,5 +1,2 @@
-github: [dhohirpradana]
-custom: ["https://github.com/dhohirpradana"]
-
-github: [nodemaven]
-custom: ["https://nodemaven.com"]
+github: [dhohirpradana, nodemaven]
+custom: ["https://github.com/dhohirpradana", "https://nodemaven.com"]
