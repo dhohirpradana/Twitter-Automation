@@ -7,13 +7,24 @@ from function import update_name, update_banner
 def delay():
     delay_seconds = random.randint(7, 13)
 
-    # Delay for the random duration
-    print(f"Waiting {delay_seconds} seconds...")
-    time.sleep(delay_seconds)
+    for i in range(delay_seconds):
+        print(f"Waiting {delay_seconds - i} seconds...")
+        time.sleep(1)
 
 
 if __name__ == "__main__":
-    update_name()
+    print("Updating name")
+    UPDATE_NAME = update_name()
+    if UPDATE_NAME:
+        print("Success update name")
+    else:
+        print("Failed update name")
+        exit()
 
     delay()
-    update_banner()
+    UPDATE_BANNER = update_banner()
+    if UPDATE_BANNER:
+        print("Success update banner")
+    else:
+        print("Failed update banner")
+        exit()

@@ -277,4 +277,4 @@ As you can conclude from the table above, **Rotating Private/Dedicated Proxies**
 
 I created twitter automation using [NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana), and so far it works well and stable.
 
-<img src="screenshot/nodemaven_proxy.png" alt="Nodemaven" width=900 />
+<img src="screenshot/execute_program.png" alt="Execute Program" width=900 />

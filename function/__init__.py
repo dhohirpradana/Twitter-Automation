@@ -36,9 +36,9 @@ def update_name():
 
         name = calendar_emoticon + " " + d_indonesia
         api.update_profile(name=name)
-        print("Updated name successfully")
+        return True
     except Exception as e:
-        print("Update name failed:", str(e))
+        return False
 
 
 def update_banner():
@@ -64,6 +64,6 @@ def update_banner():
         day = days[now_my_time.weekday()]
         print("Day: ", day)
         api.update_profile_banner(f"banner/{day}.jpg")
-        print("Updated banner successfully")
+        return True
     except Exception as e:
-        print("Update banner failed:", str(e))
+        return False
