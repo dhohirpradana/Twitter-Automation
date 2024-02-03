@@ -38,6 +38,7 @@ def update_name():
         api.update_profile(name=name)
         return True
     except Exception as e:
+        print(e)
         return False
 
 
