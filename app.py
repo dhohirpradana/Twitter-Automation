@@ -21,10 +21,10 @@ if __name__ == "__main__":
         print("Failed update name")
         exit()
 
-    delay()
-    UPDATE_BANNER = update_banner()
-    if UPDATE_BANNER:
-        print("Success update banner")
-    else:
-        print("Failed update banner")
-        exit()
+    # delay()
+    # UPDATE_BANNER = update_banner()
+    # if UPDATE_BANNER:
+    #     print("Success update banner")
+    # else:
+    #     print("Failed update banner")
+    #     exit()
