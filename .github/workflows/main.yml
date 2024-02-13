@@ -3,8 +3,8 @@ name: twitter auto update banner and name
 on:
   push:
     branches:
-      # - master
-      - main
+      - master
+      # - main
   schedule:
     - cron: "0 17 * * *"
 jobs:
