@@ -291,7 +291,7 @@ Below is the proxy quality result that I tested using the [Pixelscan](https://ad
 
 <img src="screenshot/pixelscan.png" alt="Pixelscan Proxy Checker" width=900 />
 
-Unlock an exclusive offer with coupon code DH2 when you acquire any trial or package from **[NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana)**. Benefit from an additional +**2GB** of complimentary traffic. Seize this excellent opportunity to fine-tune your automation application, enjoying enhanced reliability and performance with **[NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana)** proxies.
+Unlock an exclusive offer using DH2 when you acquire any trial or package from **[NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana)**. Benefit from an additional +**2GB** of complimentary traffic. Seize this excellent opportunity to fine-tune your automation application, enjoying enhanced reliability and performance with **[NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana)** proxies.
 
 Overall, the integration of proxies in my Twitter automation using **[NodeMaven](https://nodemaven.com/?a_aid=dhohirpradana)** has not only resolved previous security session issues but also contributed to the overall stability and reliability of the system. I am pleased with the successful outcome and look forward to further refining and enhancing the user experience.
 
